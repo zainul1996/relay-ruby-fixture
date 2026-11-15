@@ -7,4 +7,12 @@ class MathUtilTest < Minitest::Test
   def test_adds_two_numbers
     assert_equal 5, MathUtil.add(2, 3)
   end
+
+  def test_gcd_of_common_divisors
+    assert_equal 6, MathUtil.gcd(48, 18)
+  end
+
+  def test_gcd_with_zero_left_operand
+    assert_equal 5, MathUtil.gcd(0, 5)
+  end
 end
